@@ -46,25 +46,29 @@ public class MainActivity extends AppCompatActivity {
         instantiate();
     }
 
-    public void login(View view) {
-
-        takeValue();
+    public void login(final String role) {
         mAuth.signInWithEmailAndPassword(email, pass)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             FirebaseUser user = mAuth.getCurrentUser();
+                            Toast.makeText(MainActivity.this, "login done", Toast.LENGTH_SHORT).show();
+                            if(role == "user"){
+
+                            }else{
+
+                            }
                         } else {
                             Toast.makeText(MainActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
+                            signup(role);
                         }
                     }
                 });
     }
 
-    public void signup(View view) {
-
+    public void signup(final String role) {
         mAuth = FirebaseAuth.getInstance();
         takeValue();
         mAuth.createUserWithEmailAndPassword(email, pass)
@@ -72,7 +76,13 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            Toast.makeText(MainActivity.this, "signup done", Toast.LENGTH_SHORT).show();
                             FirebaseUser user = mAuth.getCurrentUser();
+                            if(role == "user"){
+
+                            }else{
+
+                            }
                         } else {
                             Toast.makeText(MainActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
@@ -80,6 +90,15 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
     }
+    public void reguser(View view){
+        takeValue();
+        login("user");
 
+    }
+    public void regadmin(View view){
+        takeValue();
+        login("admin");
+
+    }
 
 }
