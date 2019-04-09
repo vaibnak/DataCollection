@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "789780066142",
+    "firebase_url": "https://datacollection-dba55.firebaseio.com",
+    "project_id": "datacollection-dba55",
+    "storage_bucket": "datacollection-dba55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789780066142:android:3e36528afd3016d4",
+        "android_client_info": {
+          "package_name": "com.example.datacollection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789780066142-1cdkpff2hukj6tuqu85ji20b4gitf35g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.datacollection",
+            "certificate_hash": "67725a4ade6e70b8a8dac886450257819a16f4a1"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJv3x-pdQFzEqcYKLRZUbwxob0LROIN10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789780066142-fclj8b3g3tak633v5sjua23uighebibd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
