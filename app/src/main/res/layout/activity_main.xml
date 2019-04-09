@@ -29,6 +29,7 @@
         android:id="@+id/email"
         android:layout_marginTop="20dp"
         android:hint="Email"
+        android:inputType="textEmailAddress"
         android:layout_marginHorizontal="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -37,6 +38,7 @@
         android:id="@+id/pass"
         android:layout_marginTop="20dp"
         android:hint="Password"
+        android:inputType="textPassword"
         android:layout_marginHorizontal="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
