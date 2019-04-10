@@ -1,5 +1,6 @@
 package com.example.datacollection;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -55,7 +56,8 @@ public class MainActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(MainActivity.this, "login done", Toast.LENGTH_SHORT).show();
                             if(role == "user"){
-
+                                Intent intent = new Intent(getApplicationContext(), User.class);
+                                startActivity(intent);
                             }else{
 
                             }
